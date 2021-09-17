@@ -1,28 +1,23 @@
-<h1 style="text-align: center; margin-top:20px"> GlassFolio ✨ | Dev Portfolio
+<h1 align="center"> GlassFolio ✨ | Dev Portfolio
 <br>
 <a href="https://github.com/AmreshSinha/glassfolio/blob/master/LICENSE"><img src="https://img.shields.io/github/license/AmreshSinha/glassfolio?color=blue"/></a> <a href="https://github.com/AmreshSinha/glassfolio/stargazers"><img src="https://img.shields.io/github/stars/AmreshSinha/glassfolio"></a>
 
 </h1>
 
-<h2 style="text-align:center;">
+
+<h2 align="center">
 Made with Pure HTML, CSS and JS<br>
 Inspired by <a href="https://github.com/saadpasta/developerFolio/">developerFolio</a>
 </h2>
 
 <div style="display:flex; gap:5px;">
     <div style="display: inline-block;">
-        <img src="assets/website-screen1.png"/>
-    </div>
-    <div style="display: inline-block;">
-        <img src="assets/website-screen3.png"/>
+        <img width="50%" src="assets/website-screen1.png"/><img width="50%" src="assets/website-screen3.png"/>
     </div>
 </div>
 <div style="display:flex; gap:5px;">
     <div style="display: inline-block;">
-        <img src="assets/website-screen2.png"/>
-    </div>
-    <div style="display: inline-block;">
-        <img src="assets/website-screen4.png"/>
+        <img width="50%" src="assets/website-screen2.png"/><img width="50%" src="assets/website-screen4.png"/>
     </div>
 </div>
 
