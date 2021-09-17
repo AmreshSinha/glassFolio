@@ -111,22 +111,47 @@ section {
   padding: 50px;
 }
 
-header {
-  position: absolute;
-  top: -40px;
-  right: 20px;
-  left: 20px;
-  padding: 20px 50px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: rgba(255, 255, 255, 0.2);
-  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.05);
-  border-radius: 1rem;
-  backdrop-filter: blur(1rem);
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  border-top: 1px solid rgba(255, 255, 255, 0.5);
-  border-left: 1px solid rgba(255, 255, 255, 0.5);
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+  header {
+    position: absolute;
+    top: -40px;
+    right: 20px;
+    left: 20px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.05);
+    border-radius: 1rem;
+    backdrop-filter: blur(1rem);
+    -webkit-backdrop-filter: blur(1rem);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+  }
+}
+
+@supports not ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+  header {
+    position: absolute;
+    top: -40px;
+    right: 20px;
+    left: 20px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.7);
+    opacity: 0.9;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.05);
+    border-radius: 1rem;
+    backdrop-filter: blur(1rem);
+    -webkit-backdrop-filter: blur(1rem);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+  }
 }
 
 header .logo {
@@ -242,22 +267,45 @@ header ul li a.active {
   list-style: none;
 }
 
-.socialsites li a {
-  text-decoration: none;
-  width: 50px;
-  height: 50px;
-  background: rgba(255, 255, 255, 0.2);
-  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.05);
-  backdrop-filter: blur(1rem);
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  border-top: 1px solid rgba(255, 255, 255, 0.5);
-  border-left: 1px solid rgba(255, 255, 255, 0.5);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  margin: 5px 0;
-  transition: 0.5s ease;
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+  .socialsites li a {
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(1rem);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 5px 0;
+    transition: 0.5s ease;
+  }
+}
+@supports not ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+  .socialsites li a {
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.05);
+    opacity: 0.9;
+    backdrop-filter: blur(1rem);
+    -webkit-backdrop-filter: blur(1rem);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 5px 0;
+    transition: 0.5s ease;
+  }
 }
 
 .socialsites li a:hover {
@@ -774,22 +822,45 @@ footer ul li a.active {
   align-items: center;
 }
 
-#button-top {
-  text-decoration: none;
-  width: 50px;
-  height: 50px;
-  background: rgba(255, 255, 255, 0.2);
-  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.05);
-  backdrop-filter: blur(1rem);
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  border-top: 1px solid rgba(255, 255, 255, 0.5);
-  border-left: 1px solid rgba(255, 255, 255, 0.5);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  margin: 5px 0;
-  transition: 0.5s ease;
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+  #button-top {
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(1rem);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 5px 0;
+    transition: 0.5s ease;
+  }
+}
+
+@supports not ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+  #button-top {
+    text-decoration: none;
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.5);
+    opacity: 0.5;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(1rem);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 5px 0;
+    transition: 0.5s ease;
+  }
 }
 
 #button-top:hover {
