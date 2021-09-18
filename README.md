@@ -21,7 +21,7 @@ Inspired by <a href="https://github.com/saadpasta/developerFolio/">developerFoli
     </div>
 </div>
 
-<p align="center">Currently Not Mobile Responsive!</p>
+<p align="center"><strike>Currently Not Mobile Responsive!</strike> Now it is :)</p>
 
 <p align="center">Change the content in <code>index.html</code> and you are good to go :)</p>
 
