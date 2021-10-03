@@ -8,44 +8,70 @@
 
     <!-- Favicons -->
     <link rel="icon" href="./assets/favicon.ico" type="image/x-icon" />
-    <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png">
-    <link rel="manifest" href="./assets/site.webmanifest">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./assets/site.webmanifest" />
 
-    <meta name="author" content="AmreshSinha">
-    <meta name="description" content="Developer Portfolio centered around GlassMorphic UI">
-    <meta name="keywords" content="Developer, Portfolio, HTML, CSS, JS, GlassMorphic, Glassmorphic, GlassMorphism, Glassmorphism, UI">
+    <meta name="author" content="AmreshSinha" />
+    <meta
+      name="description"
+      content="Developer Portfolio centered around GlassMorphic UI"
+    />
+    <meta
+      name="keywords"
+      content="Developer, Portfolio, HTML, CSS, JS, GlassMorphic, Glassmorphic, GlassMorphism, Glassmorphism, UI"
+    />
 
-    <meta name="referrer" content="no-referrer-when-downgrade">
-    <link rel="canonical" href="https://AmreshSinha.github.io/glassFolio/">
+    <meta name="referrer" content="no-referrer-when-downgrade" />
+    <link rel="canonical" href="https://AmreshSinha.github.io/glassFolio/" />
 
     <link rel="stylesheet" href="./assets/css/all.min.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <script defer src="./assets/js/all.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
     <script src="https://code.iconify.design/2/2.0.4/iconify.min.js"></script>
     <script src="./assets/js/repo-card.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   </head>
   <body>
-  <!-- <div id="progress">
+    <!-- <div id="progress">
       <span id="progress-value"></span>
     </div> -->
 
-
     <section>
       <div class="container">
-
+        <div id="top"></div>
         <!-- Navbar -->
         <header>
-          <a href="#" class="logo">Amresh</a>
+          <a href="#top" class="logo">Amresh</a>
           <ul>
-            <li><a href="#" class="active">Home</a></li>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact" class="enabledisable">Contact</a></li>
+            <li><a class="active" href="#top" id="home-btn">Home</a></li>
+            <li><a href="#about" id="about-btn">About Me</a></li>
+            <li><a href="#experience" id="experience-btn">Experience</a></li>
+            <li><a href="#projects" id="project-btn">Projects</a></li>
+            <li>
+              <a href="#contact" class="enabledisable" id="contact-btn"
+                >Contact</a
+              >
+            </li>
           </ul>
         </header>
 
@@ -59,8 +85,8 @@
               regarding any project or just want to say a Hi? I am always
               available to listen you :)
             </p>
-            <a href="#">Contact Me</a>
-            <a href="#">Resume</a>
+            <a href="#home">Contact Me</a>
+            <a href="#home">Resume</a>
           </div>
           <div class="img">
             <img
@@ -116,22 +142,46 @@
         </div>
 
         <!-- 2nd Section -->
-        <div id="about" class="content" style="justify-content: space-around;">
+        <div id="about" class="content" style="justify-content: space-around">
           <div class="img">
             <!-- https://media.giphy.com/media/7wA0YhMXvDBhTckOGM/giphy.gif?cid=790b7611b6565a9092ee51eeee34015858a0783fd77b6f31&rid=giphy.gif&ct=s -->
-            <img src="https://media.giphy.com/media/7wA0YhMXvDBhTckOGM/source.gif?cid=790b7611b6565a9092ee51eeee34015858a0783fd77b6f31&rid=source.gif&ct=s" alt="APS-OCTOCAT" />
+            <img
+              src="https://media.giphy.com/media/7wA0YhMXvDBhTckOGM/source.gif?cid=790b7611b6565a9092ee51eeee34015858a0783fd77b6f31&rid=source.gif&ct=s"
+              alt="APS-OCTOCAT"
+            />
           </div>
           <div class="column-2">
-            <svg xmlns="//www.w3.org/2000/svg" version="1.1" class="svg-filters" style="display:none;">
+            <svg
+              xmlns="//www.w3.org/2000/svg"
+              version="1.1"
+              class="svg-filters"
+              style="display: none"
+            >
               <defs>
                 <filter id="marker-shape">
-                  <feTurbulence type="fractalNoise" baseFrequency="0 0.15" numOctaves="1" result="warp" />
-                  <feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="30" in="SourceGraphic" in2="warp" />
+                  <feTurbulence
+                    type="fractalNoise"
+                    baseFrequency="0 0.15"
+                    numOctaves="1"
+                    result="warp"
+                  />
+                  <feDisplacementMap
+                    xChannelSelector="R"
+                    yChannelSelector="G"
+                    scale="30"
+                    in="SourceGraphic"
+                    in2="warp"
+                  />
                 </filter>
               </defs>
             </svg>
-            <h2 style="font-weight: 550;"><span class="low-highlight-pink">What I do</span></h2>
-            <h3 style="font-size:24px; color:#444444; font-weight: 1;">I love all aspects of technology and want to explore as much as I can!</h3>
+            <h2 style="font-weight: 550">
+              <span class="low-highlight-pink">What I do</span>
+            </h2>
+            <h3 style="font-size: 24px; color: #444444; font-weight: 1">
+              I love all aspects of technology and want to explore as much as I
+              can!
+            </h3>
             <div class="dev-icons">
               <ul>
                 <li class="software-skill-inline c">
@@ -170,113 +220,275 @@
             </div>
 
             <div>
-              <p style="color: #444444; font-size:20px;">
-                <img alt="⚡" draggable="false" src="https://twemoji.maxcdn.com/2/72x72/26a1.png" style="height: 1em; width: 1em; margin: 0px 0.05em 0px 0.1em; vertical-align: -0.1em;">
-                Develop highly interactive Front end / User Interfaces for your web and mobile applications
+              <p style="color: #444444; font-size: 20px">
+                <img
+                  alt="⚡"
+                  draggable="false"
+                  src="https://twemoji.maxcdn.com/2/72x72/26a1.png"
+                  style="
+                    height: 1em;
+                    width: 1em;
+                    margin: 0px 0.05em 0px 0.1em;
+                    vertical-align: -0.1em;
+                  "
+                />
+                Develop highly interactive Front end / User Interfaces for your
+                web and mobile applications
               </p>
-              <p style="color: #444444; font-size:20px;">
-                <img alt="⚡" draggable="false" src="https://twemoji.maxcdn.com/2/72x72/26a1.png" style="height: 1em; width: 1em; margin: 0px 0.05em 0px 0.1em; vertical-align: -0.1em;">
-                Develop highly interactive Front end / User Interfaces for your web and mobile applications
+              <p style="color: #444444; font-size: 20px">
+                <img
+                  alt="⚡"
+                  draggable="false"
+                  src="https://twemoji.maxcdn.com/2/72x72/26a1.png"
+                  style="
+                    height: 1em;
+                    width: 1em;
+                    margin: 0px 0.05em 0px 0.1em;
+                    vertical-align: -0.1em;
+                  "
+                />
+                Develop highly interactive Front end / User Interfaces for your
+                web and mobile applications
               </p>
-              <p style="color: #444444; font-size:20px;">
-                <img alt="⚡" draggable="false" src="https://twemoji.maxcdn.com/2/72x72/26a1.png" style="height: 1em; width: 1em; margin: 0px 0.05em 0px 0.1em; vertical-align: -0.1em;">
-                Develop highly interactive Front end / User Interfaces for your web and mobile applications
+              <p style="color: #444444; font-size: 20px">
+                <img
+                  alt="⚡"
+                  draggable="false"
+                  src="https://twemoji.maxcdn.com/2/72x72/26a1.png"
+                  style="
+                    height: 1em;
+                    width: 1em;
+                    margin: 0px 0.05em 0px 0.1em;
+                    vertical-align: -0.1em;
+                  "
+                />
+                Develop highly interactive Front end / User Interfaces for your
+                web and mobile applications
               </p>
             </div>
           </div>
         </div>
 
         <!-- 3rd Section -->
-        <h2 id="experience" class="mob-h2" style="font-size:56px; font-weight: 700; margin-top: 50px;"><span class="low-highlight-skin">Experience</span></h2>
+        <h2
+          id="experience"
+          class="mob-h2"
+          style="font-size: 56px; font-weight: 700; margin-top: 50px"
+        >
+          <span class="low-highlight-skin">Experience</span>
+        </h2>
         <div class="experience-cards-div">
           <div class="experience-card">
-            <div class="experience-banner" style="background: #444941;">
+            <div class="experience-banner" style="background: #444941">
               <div class="experience-blurred_div"></div>
               <div class="experience-div-company">
-                <svg alt="Google" class="logo-svg " xmlns="http://www.w3.org/2000/svg" viewBox="0 0 86 28">
-                  <path fill="#4285F4" d="M10.4,21C4.7,21,0,16.2,0,10.5S4.7,0,10.4,0c3.1,0,5.3,1.3,7,2.9l-1.9,2c-1.2-1.2-2.8-2-5-2
+                <svg
+                  alt="Google"
+                  class="logo-svg"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 86 28"
+                >
+                  <path
+                    fill="#4285F4"
+                    d="M10.4,21C4.7,21,0,16.2,0,10.5S4.7,0,10.4,0c3.1,0,5.3,1.3,7,2.9l-1.9,2c-1.2-1.2-2.8-2-5-2
                     c-4.1,0-7.3,3.4-7.3,7.6s3.2,7.6,7.3,7.6c2.7,0,4.2-1.1,5.1-2.1c0.8-0.8,1.3-2,1.5-3.8h-6.6V9.3h9.3c0.1,0.5,0.2,1.1,0.2,1.8
-                    c0,2.2-0.5,5-2.4,6.9C15.7,20,13.4,21,10.4,21z"></path>
-                  <path fill="#EA4335" d="M34.2,14.1c0,3.9-2.9,6.7-6.6,6.7s-6.6-2.8-6.6-6.7s2.9-6.7,6.6-6.7S34.2,10.2,34.2,14.1z M31.4,14.1
-                    c0-2.5-1.7-4.1-3.7-4.1c-1.9,0-3.7,1.6-3.7,4.1c0,2.4,1.7,4.1,3.7,4.1C29.6,18.2,31.4,16.5,31.4,14.1z"></path>
-                  <path fill="#FBBC03" d="M48.4,14.1c0,3.9-2.9,6.7-6.6,6.7s-6.6-2.8-6.6-6.7s2.9-6.7,6.6-6.7S48.4,10.2,48.4,14.1z M45.5,14.1
-                    c0-2.5-1.7-4.1-3.7-4.1c-1.9,0-3.7,1.6-3.7,4.1c0,2.4,1.7,4.1,3.7,4.1C43.8,18.2,45.5,16.5,45.5,14.1z"></path>
-                  <path fill="#4285F4" d="M61.7,7.8V20c0,5-2.7,7-6.1,7c-3.2,0-5-2.2-5.8-4l2.5-1.1c0.4,1.1,1.5,2.4,3.3,2.4c2.1,0,3.4-1.4,3.4-3.9v-1
+                    c0,2.2-0.5,5-2.4,6.9C15.7,20,13.4,21,10.4,21z"
+                  ></path>
+                  <path
+                    fill="#EA4335"
+                    d="M34.2,14.1c0,3.9-2.9,6.7-6.6,6.7s-6.6-2.8-6.6-6.7s2.9-6.7,6.6-6.7S34.2,10.2,34.2,14.1z M31.4,14.1
+                    c0-2.5-1.7-4.1-3.7-4.1c-1.9,0-3.7,1.6-3.7,4.1c0,2.4,1.7,4.1,3.7,4.1C29.6,18.2,31.4,16.5,31.4,14.1z"
+                  ></path>
+                  <path
+                    fill="#FBBC03"
+                    d="M48.4,14.1c0,3.9-2.9,6.7-6.6,6.7s-6.6-2.8-6.6-6.7s2.9-6.7,6.6-6.7S48.4,10.2,48.4,14.1z M45.5,14.1
+                    c0-2.5-1.7-4.1-3.7-4.1c-1.9,0-3.7,1.6-3.7,4.1c0,2.4,1.7,4.1,3.7,4.1C43.8,18.2,45.5,16.5,45.5,14.1z"
+                  ></path>
+                  <path
+                    fill="#4285F4"
+                    d="M61.7,7.8V20c0,5-2.7,7-6.1,7c-3.2,0-5-2.2-5.8-4l2.5-1.1c0.4,1.1,1.5,2.4,3.3,2.4c2.1,0,3.4-1.4,3.4-3.9v-1
                     h-0.1c-0.6,0.8-1.8,1.6-3.4,1.6c-3.3,0-6.2-2.9-6.2-6.8s2.9-6.7,6.2-6.7c1.6,0,2.7,0.7,3.4,1.6h0.1V7.8H61.7z M59.2,14.1
-                    c0-2.4-1.5-4.1-3.5-4.1c-1.9,0-3.5,1.7-3.5,4.1s1.5,4.1,3.5,4.1C57.7,18.2,59.2,16.5,59.2,14.1z"></path>
+                    c0-2.4-1.5-4.1-3.5-4.1c-1.9,0-3.5,1.7-3.5,4.1s1.5,4.1,3.5,4.1C57.7,18.2,59.2,16.5,59.2,14.1z"
+                  ></path>
                   <path fill="#34A853" d="M66.4,1.1v19.8h-2.8V1.1H66.4z"></path>
-                  <path fill="#EA4335" d="M77.7,16.3l2.2,1.6c-0.7,1.1-2.5,3-5.5,3c-3.7,0-6.5-2.9-6.5-6.7c0-4,2.8-6.7,6.2-6.7c3.4,0,5,2.8,5.6,4.3
+                  <path
+                    fill="#EA4335"
+                    d="M77.7,16.3l2.2,1.6c-0.7,1.1-2.5,3-5.5,3c-3.7,0-6.5-2.9-6.5-6.7c0-4,2.8-6.7,6.2-6.7c3.4,0,5,2.8,5.6,4.3
                     l0.3,0.7l-8.8,3.7c0.7,1.4,1.7,2,3.2,2S76.9,17.5,77.7,16.3z M70.8,14l5.8-2.5c-0.4-0.8-1.3-1.5-2.4-1.5C72.7,10,70.7,11.3,70.8,14
-                    z"></path>
+                    z"
+                  ></path>
                 </svg>
               </div>
-              <img crossorigin="anonymous" class="experience-roundedimg" src="./assets/google.png" alt="Facebook">
+              <img
+                crossorigin="anonymous"
+                class="experience-roundedimg"
+                src="./assets/google.png"
+                alt="Facebook"
+              />
             </div>
             <div class="experience-text-details">
               <h5 class="experience-text-role">Software Engineer</h5>
               <h5 class="experience-text-date">June 2018 – Present</h5>
-              <p class="subTitle experience-text-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <p class="subTitle experience-text-desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
             </div>
           </div>
           <div class="experience-card">
-            <div class="experience-banner" style="background: rgb(20,124,244);">
+            <div
+              class="experience-banner"
+              style="background: rgb(20, 124, 244)"
+            >
               <div class="experience-blurred_div"></div>
               <div class="experience-div-company">
-                <svg viewBox="0 0 62.488 12.094" width="144.672" height="28" xmlns="http://www.w3.org/2000/svg">
-                  <g transform="matrix(0.076238, 0, 0, 0.076238, -9.869545, -16.954924)">
-                    <path class="cls-1" d="M 193.587 247.245 C 183.937 247.245 181.147 251.525 181.147 260.965 L 181.147 276.625 L 206.887 276.625 L 204.307 301.925 L 181.157 301.925 L 181.157 378.705 L 150.267 378.705 L 150.267 301.925 L 129.457 301.925 L 129.457 276.625 L 150.267 276.625 L 150.267 261.395 C 150.267 235.875 160.557 222.395 189.267 222.395 C 195.283 222.381 201.295 222.738 207.267 223.465 L 207.267 247.275 Z" style="fill: rgb(255, 255, 255);"/>
-                    <path class="cls-1" d="M 209.027 324.445 C 209.027 295.925 222.537 274.445 250.847 274.445 C 266.287 274.445 275.717 282.385 280.227 292.245 L 280.227 276.625 L 309.817 276.625 L 309.817 378.705 L 280.227 378.705 L 280.227 363.265 C 275.937 373.135 266.287 380.855 250.847 380.855 C 222.537 380.855 209.027 359.405 209.027 330.855 Z M 239.907 331.315 C 239.907 346.535 245.477 356.615 259.847 356.615 C 272.507 356.615 278.937 347.395 278.937 332.815 L 278.937 322.565 C 278.937 307.985 272.507 298.765 259.847 298.765 C 245.477 298.765 239.907 308.845 239.907 324.065 Z" style="fill: rgb(255, 255, 255);"/>
-                    <path class="cls-1" d="M 374.157 274.475 C 386.157 274.475 397.527 277.055 403.747 281.335 L 396.887 303.215 C 390.453 300.151 383.423 298.539 376.297 298.495 C 359.567 298.495 352.297 308.145 352.297 324.665 L 352.297 330.665 C 352.297 347.185 359.587 356.835 376.297 356.835 C 383.423 356.79 390.453 355.179 396.887 352.115 L 403.747 373.985 C 397.527 378.275 386.167 380.855 374.157 380.855 C 337.907 380.855 321.397 361.335 321.397 330.025 L 321.397 325.305 C 321.397 293.995 337.907 274.475 374.157 274.475 Z" style="fill: rgb(255, 255, 255);"/>
-                    <path class="cls-1" d="M 407.817 331.565 L 407.817 322.565 C 407.817 293.615 424.327 274.565 458.007 274.565 C 489.747 274.565 503.687 293.865 503.687 322.175 L 503.687 338.475 L 438.687 338.475 C 439.337 352.415 445.557 358.635 462.687 358.635 C 474.277 358.635 486.497 356.275 495.507 352.415 L 501.157 373.565 C 493.007 377.865 476.277 381.075 461.487 381.075 C 422.397 381.065 407.817 361.565 407.817 331.565 Z M 438.697 318.265 L 476.017 318.265 L 476.017 315.695 C 476.017 304.545 471.517 295.695 458.017 295.695 C 444.067 295.705 438.697 304.505 438.697 318.225 Z" style="fill: rgb(255, 255, 255);"/>
-                    <path class="cls-1" d="M 618.157 330.885 C 618.157 359.405 604.437 380.885 576.157 380.885 C 560.717 380.885 549.997 373.165 545.707 363.295 L 545.707 378.735 L 516.547 378.735 L 516.547 225.365 L 547.427 222.565 L 547.427 290.765 C 551.927 281.765 561.797 274.465 576.167 274.465 C 604.477 274.465 618.167 295.915 618.167 324.465 Z M 587.277 323.805 C 587.277 309.435 581.707 298.715 566.907 298.715 C 554.247 298.715 547.387 307.715 547.387 322.305 L 547.387 333.025 C 547.387 347.605 554.247 356.615 566.907 356.615 C 581.707 356.615 587.277 345.895 587.277 331.525 Z" style="fill: rgb(255, 255, 255);"/>
-                    <path class="cls-1" d="M 628.487 330.235 L 628.487 325.095 C 628.487 295.705 645.217 274.475 679.317 274.475 C 713.417 274.475 730.157 295.705 730.157 325.095 L 730.157 330.235 C 730.157 359.615 713.427 380.855 679.327 380.855 C 645.227 380.855 628.487 359.615 628.487 330.235 Z M 699.267 322.945 C 699.267 309.435 693.687 298.715 679.267 298.715 C 664.847 298.715 659.317 309.435 659.317 322.945 L 659.317 332.385 C 659.317 345.895 664.897 356.615 679.267 356.615 C 693.637 356.615 699.267 345.895 699.267 332.385 Z" style="fill: rgb(255, 255, 255);"/>
-                    <path class="cls-1" d="M 740.427 330.235 L 740.427 325.095 C 740.427 295.705 757.157 274.475 791.257 274.475 C 825.357 274.475 842.087 295.705 842.087 325.095 L 842.087 330.235 C 842.087 359.615 825.357 380.855 791.257 380.855 C 757.157 380.855 740.427 359.615 740.427 330.235 Z M 811.207 322.945 C 811.207 309.435 805.627 298.715 791.257 298.715 C 776.887 298.715 771.317 309.435 771.317 322.945 L 771.317 332.385 C 771.317 345.895 776.887 356.615 791.257 356.615 C 805.627 356.615 811.207 345.895 811.207 332.385 Z" style="fill: rgb(255, 255, 255);"/>
-                    <path class="cls-1" d="M 884.547 325.305 L 914.997 276.625 L 947.807 276.625 L 915.857 327.025 L 949.097 378.705 L 916.287 378.705 L 884.547 328.705 L 884.547 378.705 L 853.657 378.705 L 853.657 225.365 L 884.547 222.565 Z" style="fill: rgb(255, 255, 255);"/>
+                <svg
+                  viewBox="0 0 62.488 12.094"
+                  width="144.672"
+                  height="28"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g
+                    transform="matrix(0.076238, 0, 0, 0.076238, -9.869545, -16.954924)"
+                  >
+                    <path
+                      class="cls-1"
+                      d="M 193.587 247.245 C 183.937 247.245 181.147 251.525 181.147 260.965 L 181.147 276.625 L 206.887 276.625 L 204.307 301.925 L 181.157 301.925 L 181.157 378.705 L 150.267 378.705 L 150.267 301.925 L 129.457 301.925 L 129.457 276.625 L 150.267 276.625 L 150.267 261.395 C 150.267 235.875 160.557 222.395 189.267 222.395 C 195.283 222.381 201.295 222.738 207.267 223.465 L 207.267 247.275 Z"
+                      style="fill: rgb(255, 255, 255)"
+                    />
+                    <path
+                      class="cls-1"
+                      d="M 209.027 324.445 C 209.027 295.925 222.537 274.445 250.847 274.445 C 266.287 274.445 275.717 282.385 280.227 292.245 L 280.227 276.625 L 309.817 276.625 L 309.817 378.705 L 280.227 378.705 L 280.227 363.265 C 275.937 373.135 266.287 380.855 250.847 380.855 C 222.537 380.855 209.027 359.405 209.027 330.855 Z M 239.907 331.315 C 239.907 346.535 245.477 356.615 259.847 356.615 C 272.507 356.615 278.937 347.395 278.937 332.815 L 278.937 322.565 C 278.937 307.985 272.507 298.765 259.847 298.765 C 245.477 298.765 239.907 308.845 239.907 324.065 Z"
+                      style="fill: rgb(255, 255, 255)"
+                    />
+                    <path
+                      class="cls-1"
+                      d="M 374.157 274.475 C 386.157 274.475 397.527 277.055 403.747 281.335 L 396.887 303.215 C 390.453 300.151 383.423 298.539 376.297 298.495 C 359.567 298.495 352.297 308.145 352.297 324.665 L 352.297 330.665 C 352.297 347.185 359.587 356.835 376.297 356.835 C 383.423 356.79 390.453 355.179 396.887 352.115 L 403.747 373.985 C 397.527 378.275 386.167 380.855 374.157 380.855 C 337.907 380.855 321.397 361.335 321.397 330.025 L 321.397 325.305 C 321.397 293.995 337.907 274.475 374.157 274.475 Z"
+                      style="fill: rgb(255, 255, 255)"
+                    />
+                    <path
+                      class="cls-1"
+                      d="M 407.817 331.565 L 407.817 322.565 C 407.817 293.615 424.327 274.565 458.007 274.565 C 489.747 274.565 503.687 293.865 503.687 322.175 L 503.687 338.475 L 438.687 338.475 C 439.337 352.415 445.557 358.635 462.687 358.635 C 474.277 358.635 486.497 356.275 495.507 352.415 L 501.157 373.565 C 493.007 377.865 476.277 381.075 461.487 381.075 C 422.397 381.065 407.817 361.565 407.817 331.565 Z M 438.697 318.265 L 476.017 318.265 L 476.017 315.695 C 476.017 304.545 471.517 295.695 458.017 295.695 C 444.067 295.705 438.697 304.505 438.697 318.225 Z"
+                      style="fill: rgb(255, 255, 255)"
+                    />
+                    <path
+                      class="cls-1"
+                      d="M 618.157 330.885 C 618.157 359.405 604.437 380.885 576.157 380.885 C 560.717 380.885 549.997 373.165 545.707 363.295 L 545.707 378.735 L 516.547 378.735 L 516.547 225.365 L 547.427 222.565 L 547.427 290.765 C 551.927 281.765 561.797 274.465 576.167 274.465 C 604.477 274.465 618.167 295.915 618.167 324.465 Z M 587.277 323.805 C 587.277 309.435 581.707 298.715 566.907 298.715 C 554.247 298.715 547.387 307.715 547.387 322.305 L 547.387 333.025 C 547.387 347.605 554.247 356.615 566.907 356.615 C 581.707 356.615 587.277 345.895 587.277 331.525 Z"
+                      style="fill: rgb(255, 255, 255)"
+                    />
+                    <path
+                      class="cls-1"
+                      d="M 628.487 330.235 L 628.487 325.095 C 628.487 295.705 645.217 274.475 679.317 274.475 C 713.417 274.475 730.157 295.705 730.157 325.095 L 730.157 330.235 C 730.157 359.615 713.427 380.855 679.327 380.855 C 645.227 380.855 628.487 359.615 628.487 330.235 Z M 699.267 322.945 C 699.267 309.435 693.687 298.715 679.267 298.715 C 664.847 298.715 659.317 309.435 659.317 322.945 L 659.317 332.385 C 659.317 345.895 664.897 356.615 679.267 356.615 C 693.637 356.615 699.267 345.895 699.267 332.385 Z"
+                      style="fill: rgb(255, 255, 255)"
+                    />
+                    <path
+                      class="cls-1"
+                      d="M 740.427 330.235 L 740.427 325.095 C 740.427 295.705 757.157 274.475 791.257 274.475 C 825.357 274.475 842.087 295.705 842.087 325.095 L 842.087 330.235 C 842.087 359.615 825.357 380.855 791.257 380.855 C 757.157 380.855 740.427 359.615 740.427 330.235 Z M 811.207 322.945 C 811.207 309.435 805.627 298.715 791.257 298.715 C 776.887 298.715 771.317 309.435 771.317 322.945 L 771.317 332.385 C 771.317 345.895 776.887 356.615 791.257 356.615 C 805.627 356.615 811.207 345.895 811.207 332.385 Z"
+                      style="fill: rgb(255, 255, 255)"
+                    />
+                    <path
+                      class="cls-1"
+                      d="M 884.547 325.305 L 914.997 276.625 L 947.807 276.625 L 915.857 327.025 L 949.097 378.705 L 916.287 378.705 L 884.547 328.705 L 884.547 378.705 L 853.657 378.705 L 853.657 225.365 L 884.547 222.565 Z"
+                      style="fill: rgb(255, 255, 255)"
+                    />
                   </g>
                 </svg>
               </div>
-              <img crossorigin="anonymous" class="experience-roundedimg" src="./assets/facebookLogo.png" alt="Facebook">
+              <img
+                crossorigin="anonymous"
+                class="experience-roundedimg"
+                src="./assets/facebookLogo.png"
+                alt="Facebook"
+              />
             </div>
             <div class="experience-text-details">
               <h5 class="experience-text-role">Software Engineer</h5>
               <h5 class="experience-text-date">June 2018 – Present</h5>
-              <p class="subTitle experience-text-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <p class="subTitle experience-text-desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
             </div>
           </div>
           <div class="experience-card">
-            <div class="experience-banner" style="background: rgb(0, 0, 0);">
+            <div class="experience-banner" style="background: rgb(0, 0, 0)">
               <div class="experience-blurred_div"></div>
               <div class="experience-div-company">
-                <svg xmlns="http://www.w3.org/2000/svg" width="103.6" height="28" viewBox="0 0 1024 276.742"><path d="M140.803 258.904c-15.404 2.705-31.079 3.516-47.294 5.676l-49.458-144.856v151.073c-15.404 1.621-29.457 3.783-44.051 5.945v-276.742h41.08l56.212 157.021v-157.021h43.511v258.904zm85.131-157.558c16.757 0 42.431-.811 57.835-.811v43.24c-19.189 0-41.619 0-57.835.811v64.322c25.405-1.621 50.809-3.785 76.482-4.596v41.617l-119.724 9.461v-255.39h119.724v43.241h-76.482v58.105zm237.284-58.104h-44.862v198.908c-14.594 0-29.188 0-43.239.539v-199.447h-44.862v-43.242h132.965l-.002 43.242zm70.266 55.132h59.187v43.24h-59.187v98.104h-42.433v-239.718h120.808v43.241h-78.375v55.133zm148.641 103.507c24.594.539 49.456 2.434 73.51 3.783v42.701c-38.646-2.434-77.293-4.863-116.75-5.676v-242.689h43.24v201.881zm109.994 49.457c13.783.812 28.377 1.623 42.43 3.242v-254.58h-42.43v251.338zm231.881-251.338l-54.863 131.615 54.863 145.127c-16.217-2.162-32.432-5.135-48.648-7.838l-31.078-79.994-31.617 73.51c-15.678-2.705-30.812-3.516-46.484-5.678l55.672-126.75-50.269-129.992h46.482l28.377 72.699 30.27-72.699h47.295z" fill="#d81f26"/></svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="103.6"
+                  height="28"
+                  viewBox="0 0 1024 276.742"
+                >
+                  <path
+                    d="M140.803 258.904c-15.404 2.705-31.079 3.516-47.294 5.676l-49.458-144.856v151.073c-15.404 1.621-29.457 3.783-44.051 5.945v-276.742h41.08l56.212 157.021v-157.021h43.511v258.904zm85.131-157.558c16.757 0 42.431-.811 57.835-.811v43.24c-19.189 0-41.619 0-57.835.811v64.322c25.405-1.621 50.809-3.785 76.482-4.596v41.617l-119.724 9.461v-255.39h119.724v43.241h-76.482v58.105zm237.284-58.104h-44.862v198.908c-14.594 0-29.188 0-43.239.539v-199.447h-44.862v-43.242h132.965l-.002 43.242zm70.266 55.132h59.187v43.24h-59.187v98.104h-42.433v-239.718h120.808v43.241h-78.375v55.133zm148.641 103.507c24.594.539 49.456 2.434 73.51 3.783v42.701c-38.646-2.434-77.293-4.863-116.75-5.676v-242.689h43.24v201.881zm109.994 49.457c13.783.812 28.377 1.623 42.43 3.242v-254.58h-42.43v251.338zm231.881-251.338l-54.863 131.615 54.863 145.127c-16.217-2.162-32.432-5.135-48.648-7.838l-31.078-79.994-31.617 73.51c-15.678-2.705-30.812-3.516-46.484-5.678l55.672-126.75-50.269-129.992h46.482l28.377 72.699 30.27-72.699h47.295z"
+                    fill="#d81f26"
+                  />
+                </svg>
               </div>
-              <img crossorigin="anonymous" class="experience-roundedimg" src="./assets/netflix.png" alt="Facebook">
+              <img
+                crossorigin="anonymous"
+                class="experience-roundedimg"
+                src="./assets/netflix.png"
+                alt="Facebook"
+              />
             </div>
             <div class="experience-text-details">
               <h5 class="experience-text-role">Software Engineer</h5>
               <h5 class="experience-text-date">June 2018 – Present</h5>
-              <p class="subTitle experience-text-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <p class="subTitle experience-text-desc">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
             </div>
           </div>
         </div>
 
         <!-- 4th Section -->
-        <svg xmlns="//www.w3.org/2000/svg" version="1.1" class="svg-filters" style="display:none;">
+        <svg
+          xmlns="//www.w3.org/2000/svg"
+          version="1.1"
+          class="svg-filters"
+          style="display: none"
+        >
           <defs>
             <filter id="marker-shape">
-              <feTurbulence type="fractalNoise" baseFrequency="0 0.15" numOctaves="1" result="warp" />
-              <feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="30" in="SourceGraphic" in2="warp" />
+              <feTurbulence
+                type="fractalNoise"
+                baseFrequency="0 0.15"
+                numOctaves="1"
+                result="warp"
+              />
+              <feDisplacementMap
+                xChannelSelector="R"
+                yChannelSelector="G"
+                scale="30"
+                in="SourceGraphic"
+                in2="warp"
+              />
             </filter>
           </defs>
         </svg>
-        <h2 id="projects" class="mob-h2" style="font-size:56px; font-weight: 700; margin-top: 50px;"><span class="low-highlight-cyan">Projects</span></h2>
+        <h2
+          id="projects"
+          class="mob-h2"
+          style="font-size: 56px; font-weight: 700; margin-top: 50px"
+        >
+          <span class="low-highlight-cyan">Projects</span>
+        </h2>
         <div class="projects">
           <div class="repo-card" data-repo="AmreshSinha/glassFolio"></div>
           <div class="repo-card" data-repo="AmreshSinha/Covid19-API"></div>
-          <div class="repo-card" data-repo="AmreshSinha/Fake-SpeedTest-Generator"></div>
-          <div class="repo-card" data-repo="AmreshSinha/Webd-Template-CodingWeekIITG"></div>
+          <div
+            class="repo-card"
+            data-repo="AmreshSinha/Fake-SpeedTest-Generator"
+          ></div>
+          <div
+            class="repo-card"
+            data-repo="AmreshSinha/Webd-Template-CodingWeekIITG"
+          ></div>
           <div class="repo-card" data-repo="AmreshSinha/Youtube-UI-Clone"></div>
         </div>
-
 
         <!-- 5th Section -->
         <!-- <h2 style="font-size:56px; font-weight: 700; margin-top: 50px;"><span class="low-highlight-lightyellow">Achievements</span></h2>
@@ -329,7 +541,13 @@
 
         </div> -->
 
-        <h2 id="contact" class="mob-connect enabledisable" style="font-size:40px; font-weight: 700; margin-top: 50px;"><span class="low-highlight-hazeskin">Connect with me</span></h2>
+        <h2
+          id="contact"
+          class="mob-connect enabledisable"
+          style="font-size: 40px; font-weight: 700; margin-top: 50px"
+        >
+          <span class="low-highlight-hazeskin">Connect with me</span>
+        </h2>
         <ul class="socialsites">
           <li>
             <a href="#"><i class="fab fa-github"></i></a>
@@ -348,34 +566,39 @@
         <!-- Footer -->
       </div>
     </section>
-    <div class="button-top-div">
-      <a id="button-top"><i class="fas fa-chevron-up"></i></a>
+    <div class="button-top-div" id="myDIV">
+      <a id="button-top" href="#top"><i class="fas fa-chevron-up"></i></a>
     </div>
-    
-
-
 
     <!-- Page Scroll Percentage -->
     <!-- <script src="./assets/js/script.js"></script> -->
 
     <!-- Page Scroll Up On Click -->
     <script>
-      var btn = $('#button-top');
-
-      $(window).scroll(function() {
-        if ($(window).scrollTop() > 300) {
-          btn.addClass('show');
-        } else {
-          btn.removeClass('show');
+      //scroller fixed
+      var scrolBtn = document.querySelector("#myDIV");
+      window.addEventListener("scroll", function () {
+        let offset;
+        offset = window.pageYOffset;
+        if (offset > 300) {
+          scrolBtn.style.display = "block";
+        }
+        if (offset < 300) {
+          scrolBtn.style.display = "none";
         }
       });
 
-      btn.on('click', function(e) {
-        e.preventDefault();
-        $('html, body').animate({scrollTop:0}, '300');
+      //remove that #s in the link
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+            block: "center",
+          });
+        });
       });
-
-
     </script>
   </body>
 </html>
