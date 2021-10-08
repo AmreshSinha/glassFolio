@@ -19,7 +19,15 @@ body {
     rgba(148, 187, 233, 1) 100%
   );
 }
-
+/*custom scrollbar*/
+::-webkit-scrollbar {
+  width: 6px;
+  background: #acb7e1;
+}
+::-webkit-scrollbar-thumb {
+  background: #4577af;
+  border-radius: 10px;
+}
 .flex-row {
   display: flex;
   flex-direction: row;
