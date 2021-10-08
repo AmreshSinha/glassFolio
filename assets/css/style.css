@@ -131,8 +131,7 @@ section {
     margin-top: 120px;
     height: auto;
     padding: 10px;
-  width: calc(100% - 75px);
-
+    width: calc(100% - 75px);
   }
 }
 
@@ -142,11 +141,9 @@ section {
     margin-top: 80px;
     height: auto;
     padding: 10px;
-  width: calc(100% - 0px);
-
+    width: calc(100% - 0px);
   }
 }
-
 
 @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
   header {
@@ -198,20 +195,16 @@ section {
   }
 }
 @media (max-width: 380px) {
-
-
-header {
-  position: relative;
-  top: -120px;
-  right: 0px;
-  left: 0px;
-  width: 100%;
-  flex-direction: column;
-  padding: 20px;
+  header {
+    position: relative;
+    top: -120px;
+    right: 0px;
+    left: 0px;
+    width: 100%;
+    flex-direction: column;
+    padding: 20px;
+  }
 }
-
-}
-
 
 @supports not ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
   header {
@@ -354,7 +347,7 @@ header ul li a.active {
 }
 
 @media (max-width: 900px) {
-  .column-2{
+  .column-2 {
     position: relative;
     right: 0px;
     left: 0px;
@@ -438,7 +431,7 @@ header ul li a.active {
 }
 
 @media (min-width: 900px) {
-  .enabledisable{
+  .enabledisable {
     display: none;
   }
 }
@@ -829,7 +822,7 @@ header ul li a.active {
 .low-highlight-hazeskin {
   letter-spacing: 2px;
   padding: 0 5px;
-  background: linear-gradient(to bottom, transparent 50%, #F7D59C 50%);
+  background: linear-gradient(to bottom, transparent 50%, #f7d59c 50%);
 }
 
 #progress {
@@ -1034,32 +1027,25 @@ footer ul li a.active {
   .button-top-div {
     position: fixed;
     right: 0px;
-   
   }
-
 }
 @media (max-width: 550px) {
   .button-top-div {
     position: fixed;
     right: -35px;
-   bottom: 0;
+    bottom: 0;
   }
-
 }
 @media (max-width: 380px) {
   .button-top-div {
-  
-      position: fixed;
-      right: -35px;
-     bottom: 0;
-    
+    position: fixed;
+    right: -35px;
+    bottom: 0;
   }
   #button-top {
     width: 40px;
     height: 40px;
-   
   }
-
 }
 
 @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
