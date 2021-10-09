@@ -50,6 +50,12 @@
     <script src="https://code.iconify.design/2/2.0.4/iconify.min.js"></script>
     <script src="./assets/js/repo-card.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!--Animation-->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body>
     <!-- <div id="progress">
@@ -78,15 +84,15 @@
         <!-- Main Content -->
         <div class="content">
           <div class="column">
-            <h2>Hi all, I'm Amresh<span class="wave">👋</span></h2>
-            <p>
+            <h2 data-aos="fade-down" data-aos-duration="1000">Hi all, I'm Amresh<span class="wave">👋</span></h2>
+            <p data-aos="fade-right" data-aos-duration="1000">
               I love software development, machine learning and deep learning. I
               know a little bit of Web Dev too and Flutter! Want to discuss
               regarding any project or just want to say a Hi? I am always
               available to listen you :)
             </p>
-            <a href="#home">Contact Me</a>
-            <a href="#home">Resume</a>
+            <a href="#home" data-aos="fade-right" data-aos-duration="1000">Contact Me</a>
+            <a href="#home" data-aos="fade-right" data-aos-duration="1000">Resume</a>
           </div>
           <div class="img">
             <img
@@ -94,24 +100,28 @@
               class="shape"
               style="top: 5rem; right: 15rem"
               alt="Vector 10"
+              data-aos="fade-up-right" data-aos-duration="1000"
             />
             <img
               src="./assets/Vector 11.png"
               class="shape"
               style="height: 8rem; width: 8rem; top: 8rem; right: 20rem"
               alt="Vector 10"
+              data-aos="fade-up-right" data-aos-duration="1000"
             />
             <img
               src="./assets/Vector 16.png"
               class="shape"
               style="height: 8rem; width: 8rem; top: 8rem; right: 15rem"
               alt="Vector 10"
+              data-aos="fade-up-right" data-aos-duration="1000"
             />
             <img
               src="./assets/Vector 10.png"
               class="shape"
               style="z-index: 1; top: 23rem; right: 9rem"
               alt="Vector 10"
+              data-aos="fade-up-right" data-aos-duration="1000"
             />
             <img
               src="./assets/Vector 27.png"
@@ -124,6 +134,7 @@
                 right: 13rem;
               "
               alt="Vector 10"
+              data-aos="fade-up-right" data-aos-duration="1000"
             />
             <img
               src="./assets/Vector 11.png"
@@ -136,14 +147,15 @@
                 right: 9rem;
               "
               alt="Vector 10"
+              data-aos="fade-up-right" data-aos-duration="1000"
             />
-            <img src="./assets/APS-OCTOCAT.png" alt="APS-OCTOCAT" />
+            <img src="./assets/APS-OCTOCAT.png" alt="APS-OCTOCAT" data-aos="fade-up-right" data-aos-duration="1000"/>
           </div>
         </div>
 
         <!-- 2nd Section -->
         <div id="about" class="content page-scroll" style="justify-content: space-around">
-          <div class="img">
+          <div class="img" data-aos="fade-right" data-aos-duration="1000">
             <!-- https://media.giphy.com/media/7wA0YhMXvDBhTckOGM/giphy.gif?cid=790b7611b6565a9092ee51eeee34015858a0783fd77b6f31&rid=giphy.gif&ct=s -->
             <img
               src="https://media.giphy.com/media/7wA0YhMXvDBhTckOGM/source.gif?cid=790b7611b6565a9092ee51eeee34015858a0783fd77b6f31&rid=source.gif&ct=s"
@@ -271,14 +283,15 @@
 
         <!-- 3rd Section -->
         <h2
+          data-aos="fade-down" data-aos-duration="1500"
           id="experience"
           class="mob-h2 page-scroll"
-          style="font-size: 56px; font-weight: 700; margin-top: 50px"
+          style="font-size: 56px; font-weight: 700; margin-top: 50px; text-align:center;"
         >
           <span class="low-highlight-skin">Experience</span>
         </h2>
         <div class="experience-cards-div">
-          <div class="experience-card">
+          <div class="experience-card" data-aos="fade-right" data-aos-duration="1500">
             <div class="experience-banner" style="background: #444941">
               <div class="experience-blurred_div"></div>
               <div class="experience-div-company">
@@ -335,7 +348,7 @@
               </p>
             </div>
           </div>
-          <div class="experience-card">
+          <div class="experience-card" data-aos="fade-right" data-aos-duration="2000">
             <div
               class="experience-banner"
               style="background: rgb(20, 124, 244)"
@@ -410,7 +423,7 @@
               </p>
             </div>
           </div>
-          <div class="experience-card">
+          <div class="experience-card" data-aos="fade-right" data-aos-duration="2500">
             <div class="experience-banner" style="background: rgb(0, 0, 0)">
               <div class="experience-blurred_div"></div>
               <div class="experience-div-company">
@@ -476,7 +489,7 @@
         >
           <span class="low-highlight-cyan">Projects</span>
         </h2>
-        <div class="projects">
+        <div class="projects" data-aos="fade-up" data-aos-duration="1500">
           <div class="repo-card" data-repo="AmreshSinha/glassFolio"></div>
           <div class="repo-card" data-repo="AmreshSinha/Covid19-API"></div>
           <div
@@ -598,6 +611,10 @@
           });
         });
       });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
     </script>
   </body>
 </html>
