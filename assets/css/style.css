@@ -828,7 +828,6 @@ header ul li a.active {
 }
 
 .low-highlight-hazeskin {
-  margin: 0 auto;
   letter-spacing: 2px;
   padding: 0 5px;
   background: linear-gradient(to bottom, transparent 50%, #f7d59c 50%);
