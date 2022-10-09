@@ -56,6 +56,36 @@ Just change ```username``` and ```repository``` to yours and you are good to go!
 - Supports <a href="https://github.com/devicons/devicon">DevIcon</a>
 - Supports Iconify
 
-## Thanks
+## Author
+
+👤 **Amresh Sinha**
+
+- Github: [@AmreshSinha](https://github.com/AmreshSinha/)
+- LinkedIn: [@AmreshSinha](https://www.linkedin.com/in/amresh-sinha/)
+- Portfolio: [amreshsinha.vercel.app](https://amreshsinha.vercel.app/)
+
+## 🤝 Contributing
+
+Your awesome contribution will make this project better, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/AmreshSinha/glassFolio/issues).
+
+
+## 📝 License
+
+This project is under [MIT License](https://github.com/AmreshSinha/glassFolio/blob/main/LICENSE).
+
+## Special mentions
 - <a href="https://github.com/saadpasta/developerFolio/">hsaadpasta/developerFolio</a>
 - <a href="https://github.com/Tarptaeya/repo-card">Tarptaeya/repo-card</a>
+
+
+## Project Contributors⭐ 
+
+<table align="center">
+<tr>
+<td>
+<a href="https://github.com/AmreshSinha/glassFolio/graphs/contributors" align="center">
+  <img src="https://contrib.rocks/image?repo=AmreshSinha/glassFolio" /> 
+</a>
+</td>
+</tr>
+</table>
