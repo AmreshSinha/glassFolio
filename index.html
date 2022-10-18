@@ -42,7 +42,9 @@
 
     <link rel="stylesheet" href="./assets/css/all.min.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/modal.css"/>
     <script defer src="./assets/js/all.js"></script>
+    <script defer src="./assets/js/modal.js"></script>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
@@ -50,6 +52,7 @@
     <script src="https://code.iconify.design/2/2.0.4/iconify.min.js"></script>
     <script src="./assets/js/repo-card.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!--Animation-->
     <link
     rel="stylesheet"
@@ -91,7 +94,7 @@
               regarding any project or just want to say a Hi? I am always
               available to listen you :)
             </p>
-            <a href="#home" data-aos="fade-right" data-aos-duration="1000">Contact Me</a>
+            <a data-toggle="modal" href="#myModal" data-aos="fade-right" data-aos-duration="1000" id="contact">Contact Me</a>
             <a href="#home" data-aos="fade-right" data-aos-duration="1000">Resume</a>
           </div>
           <div class="img">
@@ -152,7 +155,49 @@
             <img src="./assets/APS-OCTOCAT.png" alt="APS-OCTOCAT" data-aos="fade-up-right" data-aos-duration="1000"/>
           </div>
         </div>
-
+        <!-- The Modal -->
+        <div class="cd-popup contact" role="alert">
+          <form name="contactform" id="contactform" class="contact-form">
+            <div class="cd-popup-container">
+              <p style="color:darkorchid"><h1>Hey! How can I help you?</h1>
+                <a href="" class="cd-popup-close cd-close-button">
+                  <i class="fa fa-times" style="pointer-events:none;"></i>
+                </a>
+              </p>
+        
+              <div class="name">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" />
+              </div>
+              <div class="email">
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" />
+              </div>
+              <div class="message">
+                <label for="message">Message</label>
+                <textarea name="message" id="message" name="message"></textarea>
+              </div>
+              <br>
+              <div style="text-align:left">
+                <input type="checkbox" id="human" name="human" />
+                <label for="human">I am a human and not a robot.</label>
+              </div>
+              <br>
+              <div class="submit">
+                <input type="submit" name="submit" id="submit" value="Send" />
+              </div>
+            </div>
+          </form>
+        </div>
+        
+        <div class="cd-popup notification" role="alert">
+          <div class="cd-popup-container">
+            <a href="" class="cd-popup-close cd-close-button"><i class="fa fa-times" style="pointer-events:none;"></i></a>
+            <p>
+              <h3 id="notification-text">Thanks for getting in touch!</h3>
+            </p>
+          </div>
+        </div>
         <!-- 2nd Section -->
         <div id="about" class="content page-scroll" style="justify-content: space-around">
           <div class="img" data-aos="fade-right" data-aos-duration="1000">
