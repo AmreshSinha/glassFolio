@@ -1,3 +1,5 @@
+# ❗❗ Check out my current portfolio for a better UI and code: [wink](https://github.com/AmreshSinha/wink)
+
 <h1 align="center"> GlassFolio ✨ | Dev Portfolio
 <br>
 <a href="https://github.com/AmreshSinha/glassfolio/blob/master/LICENSE"><img src="https://img.shields.io/github/license/AmreshSinha/glassfolio?color=blue"/></a> <a href="https://github.com/AmreshSinha/glassfolio/stargazers"><img src="https://img.shields.io/github/stars/AmreshSinha/glassfolio"></a>
